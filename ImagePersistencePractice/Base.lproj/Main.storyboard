@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Image View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ImageViewController" customModule="ImagePersistencePractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A6U-FG-XMA">
+                                <rect key="frame" x="28" y="57" width="280" height="453"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XPd-Je-Ulo">
+                                <rect key="frame" x="23" y="518" width="40" height="30"/>
+                                <state key="normal" title="Shark"/>
+                                <connections>
+                                    <action selector="photoPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N8M-z5-Juf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49O-Ig-d4b">
+                                <rect key="frame" x="241" y="518" width="59" height="30"/>
+                                <state key="normal" title="Sea Lion"/>
+                                <connections>
+                                    <action selector="photoPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QnG-wn-g9I"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXA-bu-8Io">
+                                <rect key="frame" x="28" y="20" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKi-2R-7de">
+                                <rect key="frame" x="139" y="518" width="43" height="30"/>
+                                <state key="normal" title="Whale"/>
+                                <connections>
+                                    <action selector="photoPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Rr-EA-Fbw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="kXA-bu-8Io" secondAttribute="trailing" constant="12" id="9sl-ol-qYH"/>
+                            <constraint firstItem="A6U-FG-XMA" firstAttribute="top" secondItem="kXA-bu-8Io" secondAttribute="bottom" constant="16" id="BeI-9L-YXj"/>
+                            <constraint firstItem="A6U-FG-XMA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="EQO-kq-nEa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="49O-Ig-d4b" secondAttribute="bottom" constant="20" id="MK5-zh-2y4"/>
+                            <constraint firstItem="49O-Ig-d4b" firstAttribute="top" secondItem="A6U-FG-XMA" secondAttribute="bottom" constant="8" id="QAP-xg-8yN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="A6U-FG-XMA" secondAttribute="trailing" constant="-8" id="SFN-8x-Aa0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XPd-Je-Ulo" secondAttribute="bottom" constant="20" id="UH1-Op-yva"/>
+                            <constraint firstItem="XPd-Je-Ulo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="3" id="a2F-S1-R5c"/>
+                            <constraint firstItem="kXA-bu-8Io" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="dIB-C1-f6X"/>
+                            <constraint firstItem="kXA-bu-8Io" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="28" id="dPy-G2-QCn"/>
+                            <constraint firstItem="MKi-2R-7de" firstAttribute="leading" secondItem="XPd-Je-Ulo" secondAttribute="trailing" constant="76" id="kFe-iT-Elk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MKi-2R-7de" secondAttribute="bottom" constant="20" id="kL7-Lb-neU"/>
+                            <constraint firstItem="49O-Ig-d4b" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="oFY-xd-660"/>
+                            <constraint firstItem="49O-Ig-d4b" firstAttribute="leading" secondItem="MKi-2R-7de" secondAttribute="trailing" constant="59" id="uEn-Pv-V2g"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="photoView" destination="A6U-FG-XMA" id="l9v-33-ASB"/>
+                        <outlet property="statusLabel" destination="kXA-bu-8Io" id="G44-Kz-y5C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-140" y="559"/>
+        </scene>
+    </scenes>
+</document>
